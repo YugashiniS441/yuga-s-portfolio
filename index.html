@@ -1,114 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Yugas - Data Science Projects and Research">
-    <title>Yugas' Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 2rem;
-        }
-        .projects, .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        .project, .skill {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1 1 250px;
-            min-width: 250px;
-        }
-        .project a, .skill a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-    </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHCD0C5H3R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XHCD0C5H3R');
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yugashini S | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --primary: #0056b3;
+      --light-bg: #f9f9f9;
+      --dark-bg: #222;
+      --accent: #00bcd4;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: var(--dark-bg);
+      color: white;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      background: linear-gradient(135deg, #004e92, #000428);
+      color: white;
+      padding: 6rem 2rem 3rem;
+      text-align: center;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .experience, .education, .certificates {
+      margin-bottom: 2rem;
+    }
+    .card p {
+      margin: 0.5rem 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
 
+<nav>
+  <div><strong>Yugashini S</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <header>
-    <h1>Yugas' Data Science Portfolio</h1>
-    <p>Welcome to my personal portfolio showcasing my data science projects and research.</p>
+  <h1>Yugashini S</h1>
+  <p>Data Analyst | Python | SQL | Tableau | Visualization Enthusiast</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>Hi, I'm Yugas, a passionate data scientist with a focus on machine learning, artificial intelligence, and data analysis. Below are some of the key projects I have worked on.</p>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a detail-oriented Data Analyst skilled in Python, SQL, and Tableau, with experience in data cleaning, analysis, and storytelling. I'm passionate about transforming raw data into insights and currently pursuing a BE in Computer Science at University College of Engineering, Villupuram.
+  </p>
 </section>
 
-<section class="skills">
-    <h2>Skills</h2>
-    <div class="skill">
-        <h3>Python</h3>
-        <p>Experience with data manipulation, analysis, and machine learning libraries like Pandas, NumPy, Scikit-learn, and TensorFlow.</p>
-    </div>
-    <div class="skill">
-        <h3>Machine Learning</h3>
-        <p>Building predictive models for classification, regression, and clustering tasks. Proficient in algorithms like decision trees, SVM, and deep learning.</p>
-    </div>
-    <div class="skill">
-        <h3>Data Visualization</h3>
-        <p>Creating insightful visualizations using tools like Matplotlib, Seaborn, and Plotly to convey data-driven insights effectively.</p>
-    </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><strong>Languages:</strong> Python, SQL, C</div>
+    <div class="card"><strong>Tools:</strong> Excel, Tableau, Git, VS Code</div>
+    <div class="card"><strong>Data Analysis:</strong> Statistics, EDA, Excel</div>
+    <div class="card"><strong>Visualization:</strong> Tableau, Matplotlib, Seaborn</div>
+    <div class="card"><strong>Soft Skills:</strong> Problem Solving, Teamwork, Adaptability</div>
+  </div>
 </section>
 
-<section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Phishing Detection Model</h3>
-        <p>A model built using the Kaggle Phishing Email dataset to identify phishing emails with an accuracy of 99.41%.</p>
-        <a href="https://github.com/yourusername/phishing-detection">View Project</a>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience grid">
+    <div class="card">
+      <h3>Data Analytics Intern</h3>
+      <p><strong>Geakminds Technologies</strong> | Mar 2025 – Present</p>
+      <ul>
+        <li>Learning Python, SQL, Tableau for data tasks</li>
+        <li>Working with real datasets for cleaning and visualization</li>
+      </ul>
     </div>
-    <div class="project">
-        <h3>E-commerce Dashboard</h3>
-        <p>A comprehensive dashboard designed for monitoring key performance indicators (KPIs) in an e-commerce platform.</p>
-        <a href="https://github.com/yourusername/ecommerce-dashboard">View Project</a>
+    <div class="card">
+      <h3>Python Development Intern</h3>
+      <p><strong>Octanet Pvt Ltd</strong> | Jun – Jul 2024</p>
+      <ul>
+        <li>Completed virtual internship on core Python programming</li>
+      </ul>
     </div>
-    <div class="project">
-        <h3>Smart Phishing Detection with DistilBERT</h3>
-        <p>Research project using DistilBERT for smarter phishing detection. Focused on improving phishing identification accuracy with transformer models.</p>
-        <a href="https://github.com/yourusername/smart-phishing-detection">View Project</a>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education grid">
+    <div class="card">
+      <h3>BE in Computer Science</h3>
+      <p><strong>University College of Engineering, Villupuram</strong></p>
+      <p>CGPA: 7.7</p>
     </div>
+    <div class="card">
+      <h3>HSC</h3>
+      <p><strong>MRV Hr Sec School, Perambalur</strong></p>
+      <p>Percentage: 89%</p>
+    </div>
+    <div class="card">
+      <h3>SSLC</h3>
+      <p><strong>MRV Hr Sec School, Perambalur</strong></p>
+      <p>Percentage: 88%</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certificates grid">
+    <div class="card">Python Course – Udemy</div>
+    <div class="card">The Joy of Computing Using Python – NPTEL</div>
+    <div class="card">Data Analytics Course – Trainity</div>
+    <div class="card">Titan Leap Workshop – Employability Skills by Naandi Foundation</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <summary>📊 Bank Loan Analysis</summary>
+      <p>Analyzed loan data to understand trends and defaults.</p>
+      <a href="https://docs.google.com/presentation/d/1RUdWXsWEUEGFNXhOUnre_SP5APAICHL6/edit?usp=drive_link" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <summary>🎬 IMDB Movie Analysis</summary>
+      <p>Statistical and trend analysis of movies using Excel & statistics.</p>
+      <a href="https://docs.google.com/presentation/d/1N3AgkDQD8-lt2vj220_xxySZ6B8JaXqg/edit?usp=drive_link" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <summary>📱 Instagram User Analytics</summary>
+      <p>SQL-based insights into engagement, posts & follower growth.</p>
+      <a href="https://drive.google.com/file/d/1aeAXohld-D7-6PCmdNTX1RRmQeKaHKJ3/view?usp=sharing" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:syuga441@gmail.com">syuga441@gmail.com</a></p>
+  <p>Phone: +91 8667312557</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/yugashini-s" target="_blank">linkedin.com/in/yugashini-s</a></p>
+  <p>GitHub: <a href="https://github.com/YugashiniS441" target="_blank">github.com/YugashiniS441</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Yugas - All Rights Reserved</p>
+  &copy; 2025 Yugashini S — All Rights Reserved
 </footer>
 
 </body>
